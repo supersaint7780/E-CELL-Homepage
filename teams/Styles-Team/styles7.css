@@ -1,0 +1,130 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background-image: url(../Images-Team/E\ summit\ bg.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  /*     #2C3639 */
+}
+
+.card-1 {
+  align-items: center;
+  background-color: transparent;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 4.2rem;
+}
+
+.heading {
+  padding-top: 40px;
+  margin-top: 140px;
+  color: #DCD7C9;
+  position:relative;
+  z-index: 5;
+}
+
+.section-title {
+  color: #DCD7C9;
+  padding: 10px 0;
+  font-size: 2rem;
+  position:relative;
+  z-index: 5;
+}
+
+#teams {
+  padding: 40px 30px 100px;
+}
+
+.card-img-top {
+  border-radius: 100%;
+  width: 75%;
+    transition-property:transform;
+    transition-duration:0.75s;
+}
+.card-img-top:hover{
+  transform:scale(1.05);
+  
+}
+
+@media(max-width:450px) {
+  #teams {
+    padding: 40px 50px 100px;
+  }
+
+  h1 {
+    font-size: 3rem;
+
+  }
+  body{
+    background-image: url(../Images-Team/E\ summit\ mobile\ bg.webp);
+  }
+}
+
+.teams-column {
+  padding: 3% 2%;
+}
+
+.footer-icon {
+  padding: 5px 10px;
+  color: #585656;
+  margin-bottom: 1rem;
+}
+
+.footer-icon:hover {
+  color: white;
+  transform: translateY(-1px);
+}
+
+.card-body {
+  padding: 10px 0 0 0;
+  color: white;
+  /* background-color: aqua; */
+}
+
+.icons {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .card-1:hover{
+  transform: translateY(-3px);
+box-shadow: 5px 5px 5px #0F0E0E;
+
+} */
+.position-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.big-position-text {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.big-name {
+  padding-top: 3px;
+  font-size: 1.5rem;
+}
+
+.last-row {
+  justify-content: center;
+}
+
+.very-big-name {
+  padding-top: 5px;
+  font-size: 1.3rem;
+}
+
+.card-title {
+  padding-top: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+}

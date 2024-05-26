@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@200;300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+/* wall section css start */
+section.wall {
+    --wall-head-font-size: 16px;
+    background-size: cover;
+    background-image: url("../media/summit-main.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    display: flex;
+    flex-direction: column;
+    padding: 14rem 6rem;
+}
+
+div.wall-head {
+    color: #E8E8E8;
+    font-family: 'Raleway';
+    font-size: calc(1rem + 3vw);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.17231rem;
+}
+
+div.wall-text {
+    max-width: 50rem;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: calc(12px + (18 - 12) * ((100vw - 300px) / (1600 - 300)));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: 0.07875rem;
+    padding-left: 0.25rem;
+}
+
+span.wall-num {
+    color: #E8E8E8;
+    font-family: Inter;
+    font-size: calc(2rem + 3vw);
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.17231rem;
+}
+
+@media (max-width:1024px) {
+    section.wall {
+        padding: 12rem 4rem;
+    }
+}
+
+@media (max-width:650px) {
+    div.wall-head {
+        font-size: calc(0.8rem + 3vw);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    section.wall {
+        height: 100vh;
+        padding: 35vh 2.5rem;
+    }
+
+    div.wall-head {
+        color: #E8E8E8;
+        text-align: center;
+        font-family: 'Raleway';
+        font-size: calc(0.9rem + 1vw);
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.05119rem;
+        margin-bottom: 1.5rem;
+    }
+
+    div.wall-text {
+        color: #FFF;
+        text-align: justify;
+        font-family: 'Montserrat';
+        font-size: 0.725rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25rem;
+        /* 180% */
+        letter-spacing: 0.0125rem;
+    }
+
+    span.wall-num {
+        font-size: calc(1.4rem + 1vw);
+    }
+}
+
+/* footer section css start */
+footer.summit-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 350px;
+    background-color: #000000;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+div.footer-left,
+div.footer-right {
+    width: 50%;
+    color: #949494;
+}
+
+div.footer-left {
+    border-right: 1px solid #949494;
+    padding: 0 5rem;
+}
+
+h2.footer-left-head {
+    color: #D99343;
+    font-family: 'Raleway';
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.225rem;
+    margin-bottom: 3rem;
+}
+
+div.footer-left-contacts {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.12rem;
+}
+
+div.footer-contact {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+img.contact-type-img {
+    width: 1.125rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    display: block;
+    align-self: flex-start;
+    margin-top: 0.05rem;
+}
+
+div.contact-text {
+    color: #B5B5B6;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25rem;
+    letter-spacing: 0.12rem;
+}
+
+div.call {
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+div.footer-right {
+    padding: 0rem 5rem;
+}
+
+h2.footer-right-head {
+    margin-top: 0.25rem;
+    color: #D99343;
+    font-family: 'Raleway';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1.5rem;
+}
+
+form.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+div.footer-input>textarea:focus,
+div.footer-input>input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #D99343;
+}
+
+div.footer-input>input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    /* text-align: center; */
+    letter-spacing: 0.12em;
+    color: #949494;
+    transition: 0.4s;
+}
+
+div.footer-input>textarea {
+    border: none;
+    overflow: hidden;
+
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    height: 100px;
+    resize: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    color: #949494;
+    transition: 0.4s;
+}
+
+form.footer-form>button {
+    background-color: #000000;
+    border: 1px solid #D99343;
+    border-radius: 0.75rem;
+    width: 7.85713rem;
+    height: 2.0625rem;
+
+    color: #CB8A3F;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.0825rem;
+}
+
+form.footer-form>button:hover {
+    background-color: #D99343;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:1000px) {
+    div.footer-right {
+        padding: 0 3rem;
+        padding-left: 4rem;
+    }
+
+    div.footer-left {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width:750px) {
+    div.footer-right {
+        padding: 0 1.5rem;
+        padding-left: 4rem;
+    }
+
+    div.footer-left {
+        padding: 0 1.5rem;
+    }
+}
+
+hr.mobile-separation {
+    display: none;
+}
+
+@media (max-width:650px) {
+    footer.summit-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.footer-left,
+    div.footer-right {
+        width: 100%;
+    }
+
+    div.footer-left {
+        border: none;
+        border-bottom: none;
+        padding-bottom: 2.5rem;
+    }
+
+    div.footer-left>h2 {
+        text-align: center;
+    }
+
+    h2.footer-right-head {
+        text-align: center;
+    }
+
+    img.contact-icon {
+        height: 1.6rem;
+    }
+
+    div.contact-option {
+        flex-direction: column;
+        margin: auto;
+        min-width: 35vw;
+        text-align: center;
+    }
+
+    div.footer-right {
+        padding: 2.5rem 1.5rem;
+    }
+
+    form.footer-form>button {
+        align-self: center;
+    }
+
+    hr.mobile-separation {
+        display: block;
+        width: 70%;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #CACACA;
+        border: none;
+    }
+
+    div.footer-left-contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+    }
+
+    div.footer-contact {
+        align-items: flex-start;
+    }
+
+    div.one {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    div.two {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    div.three {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
+@media (max-width:590px) {
+    div.footer-left {
+        padding: 0;
+        padding-bottom: 2.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    div.footer-input>label {
+        font-size: 0.8rem;
+    }
+
+    div.footer-left-contacts {
+        padding-left: 0.5rem;
+    }
+
+    div.footer-contact {
+        gap: 0.35rem;
+    }
+
+    div.contact-text {
+        font-size: 0.8rem;
+    }
+
+    img.contact-type-img {
+        height: 0.85rem;
+        width: 0.85rem;
+        margin-top: 0.25rem;
+    }
+}
+
+@media (max-width:400px) {
+    div.footer-left-contacts {
+        display: flex;
+        padding-left: 2rem;
+    }
+
+    div.footer-left-head {
+        margin-bottom: 2rem;
+    }
+}
+
+/* footer section css end */

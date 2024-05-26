@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600;700;800&display=swap");
+
+
+
+section {
+  
+  width: 100%;
+  margin: 0 auto;
+  display: inline;
+  flex-direction: center;
+  align-items: center;
+  justify-content: self;
+}
+.question{
+  align-items: center;
+  padding-left: 20px;
+}
+
+#faq {
+  opacity: 1;
+  justify-items: center;
+  display: block;
+  text-align: center;
+  position: relative;
+  background-size: 100% 100%;
+  /* max-width: 1000px; */
+  cursor: pointer;
+  padding-bottom: 1rem;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  /* height:130vh; */
+
+  z-index: -1;
+}
+
+.ssn::-webkit-scrollbar {
+  display: none;
+}
+
+.ssn {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+#buttonclass{
+  font-size:20px;
+  font-family:"Raleway";
+  width:161px;
+  height:51px;
+  border-width:1px;
+  color:rgba(0, 0, 0, 1);
+  margin-top: 75px;
+  margin-bottom: 70px;
+  
+  font-weight:bold;
+  border-top-left-radius:11px;
+  border-top-right-radius:11px;
+  border-bottom-left-radius:11px;
+  border-bottom-right-radius:11px;
+  background:rgba(217, 147, 67, 1);
+}
+
+#buttonClass:hover {
+  background: rgb(147, 99, 44)
+}
+
+
+.question h1 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  color: #000000;
+  font-size: 20px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  
+  
+}
+
+.answer {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+  text-align: left;
+}
+
+
+section {
+  overflow-x: hidden;
+}
+
+#faq.active .answer {
+  max-height: fit-content
+}
+
+#faq.active.svg {
+  transform: rotate(180deg);
+  animation: fade 1s ease-in-out;
+}
+
+svg {
+  transition: transform 0.5s ease-in;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+@keyframes appear{
+  from{
+       transform: translateY(0px);
+  }
+  to{
+    transition: translateY(max-height);
+  }
+
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

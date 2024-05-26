@@ -1,0 +1,54 @@
+<html>
+  <head>
+     <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+
+ let config = {
+    apiKey: "AIzaSyDsxXUlVdImrkzZgN1hA9fwD-GWGHrk0Mw",
+    authDomain: "ecell-f69fd.firebaseapp.com",
+    databaseURL: "https://ecell-f69fd-default-rtdb.firebaseio.com",
+    projectId: "ecell-f69fd",
+    storageBucket: "ecell-f69fd.appspot.com",
+    messagingSenderId: "742246625764",
+    appId: "1:742246625764:web:9d029cdf99989fb3f9d7f1",
+    measurementId: "G-ER9DWJR9SF"
+};
+firebase.initializeApp(config);
+
+let datamsg = firebase.database().ref('guestdata');
+const search = new URLSearchParams(window.location.search);
+const paramarr = Array.from(search.entries());
+
+if (paramarr.length > 0 && paramarr[0][1] === 'hackathon') {
+    const date = new Date();
+    const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    const time3 = date.toLocaleDateString();
+    const data = {
+        name: paramarr[0][0],
+        time: time,
+        date: time3
+    };
+
+    sendMessage(data);
+}
+
+async function sendMessage(data) {
+    let guestdata = datamsg.push();
+    try {
+        await guestdata.set(data);
+        console.log("done");
+    } catch (err) {
+        console.log(err);
+    } finally {
+        window.location.assign("https://drive.google.com/file/d/1_l0qqEN5f6-9D3o5hfPXtc3149PH0yMY/view?usp=sharing");
+    }
+}
+
+</script>
+  </head>
+  <body>
+    <B>
+      Please wait you are being redirected to the document.
+    </B>
+  </body>
+</html>

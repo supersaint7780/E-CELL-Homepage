@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    background-color: black;
+    padding: 6rem 0rem;
+    background-image: url('../assets/aboutus.webp');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+}
+
+.gallery-head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding:1rem;
+    margin-bottom: 4rem;
+}
+
+.gallery-head-small {
+    color: #FFF9F9;
+    font-family: Inter;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.08438rem;
+    text-align: center;
+}
+
+.gallery-head-large {
+    color: #FBF5F5;
+    font-family: Inter;
+    text-align: center;
+    font-size: 4.0625rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.12188rem;
+}
+
+@media (max-width:600px) {
+    .gallery-head-large {
+        font-size: 3.75rem;
+    }
+}
+
+.scroller {
+    max-width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    -webkit-mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
+    mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
+}
+
+.scroller__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 80vh;
+    width: max-content;
+    animation: scroll 40s forwards linear infinite;
+}
+
+img {
+    height: 100%;
+}
+
+@keyframes scroll {
+    to {
+        transform: translate(-50%);
+    }
+}

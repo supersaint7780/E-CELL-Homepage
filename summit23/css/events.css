@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Raleway:wght@200;300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    font-size: 16px; /* Default root font size */
+  }
+  
+@media screen and (max-width: 600px) {
+    :root {
+      font-size: 10px; /* Adjust root font size for small screens */
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media screen and (min-width: 601px) and (max-width: 1524px) {
+    :root {
+      font-size: 16px; /* Adjust root font size for medium screens */
+    }
+  }
+  
+  /* Media query for large screens */
+  @media screen and (min-width: 1525px) {
+    :root {
+      font-size: 20px; /* Adjust root font size for large screens */
+    }
+  }
+  /* Media query for small screens */
+  @media screen and (max-width: 400px) {
+    
+    :root {
+      font-size: 8px; /* Adjust root font size for small screens */
+    }
+    
+  }
+  
+  /* Your other styles using rem units */
+  body {
+    font-size: 1rem; /* This will be relative to the root font size */
+  }
+  
+.parent{
+    width: 100%;
+    height: 110vh;
+    background-image: url("../images/Modern\ -\ 3\ \(1\).webp");
+    padding: 3.4rem 0;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+.side-bar{
+    width: 15%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0px 24px 24px 0px;
+    background: #FCFBFF;
+    padding: 0.5rem 0;
+    box-shadow: 2px 0px 24px 0px rgba(0, 0, 0, 0.10);
+}
+
+.maindiv{
+    width: 80%;
+    height: 80vh;
+    overflow-y: auto;
+    margin-left:0.3rem;
+}
+
+.maindiv>div{
+    width: 100%;
+    height:100%;
+    padding-right: 3rem;
+}
+
+.list-item{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #C5C5C5;
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+    width: max-content;
+    margin: 0rem 1rem;
+    align-items: center;
+}
+
+.head1{
+   margin-top: 1rem;
+   color: #000;
+   font-family: Montserrat;
+   font-size: 2rem;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+}
+
+.head2{
+    margin-top: 0.3rem;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.info-par{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   margin-top: 2rem;
+   gap: 1rem;
+}
+
+.info-img{
+   width: 50%;
+   height: 18rem;
+}
+
+.info-con-par{
+   width: 50%;
+}
+
+.info-con-1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.7;
+    text-align: justify;
+    padding-left:30px;
+}
+
+/* .info-con-2{
+    margin-top: 0.6rem;
+    color: #727272;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+} */
+
+.maindiv::-webkit-scrollbar{
+    width: 0.3rem;
+}
+.maindiv::-webkit-scrollbar-thumb {
+    height: 1rem;
+    border-radius: 10px;
+    background-color: #FD8900;
+}
+
+
+
+
+ 
+
+  @media screen and (max-width:1200px) {
+      .side-bar{
+        width: max-content;
+      }
+  }
+  @media screen and (max-width:1000px){
+    .info-par{
+        flex-direction: column;
+    }
+    .maindiv>div{
+        height: max-content;
+        padding: 0 0 0 2rem;
+    }
+    .info-img{
+        width: 70%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+    .info-con-par{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .side-bar{
+      width: max-content;
+    }
+    .info-img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:501px){
+    .side-bar{
+       display: none;
+    }
+    
+    .list-item{
+        margin: 0 0.3rem;
+        text-align: justify;
+    }
+    .maindiv{
+        width: max-content;
+        height: max-content;
+        overflow-y: visible;
+        /* overflow-x: hidden; */
+    }
+    .parent{
+        height: max-content;
+    }
+    .head1{
+        font-size: 1.5rem;
+    }
+    .head2{
+        font-size: 2rem;
+    }
+    :root{
+        font-size: 8px;
+    }
+    .maindiv>div{
+        margin-top: 1rem;
+        padding: 0 0.8rem;
+    }
+    .info-con-1{
+        padding-left: 0px;
+     }
+}
