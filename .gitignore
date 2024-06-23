@@ -1,0 +1,2 @@
+# to prevent node_modules folder from getting tracked inside a folder which is inside a folder:-
+**/node_modules
