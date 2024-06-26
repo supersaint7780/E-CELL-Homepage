@@ -1,3 +1,5 @@
+// Following data was scraped using ./teams/JS-Team/scraper/scraper2.js
+// it was loogged in the console and copy-pasted here.
 const spnData = [
     {
       name: 'adani',
@@ -407,11 +409,22 @@ const spnData = [
   ]
 
 const mainContainer = document.getElementById("sponsorIcons");
-mainContainer.innerHTML = ""
 
-spnData.forEach(sponsor => {
-    const spnImg = new Image()
-    spnImg.src = sponsor.imageSource;
+mainContainer.innerHTML = "" //Remove any HTML present inside the container in which we will populate data
+
+// Asynchronous Code for loading the image from the server and use its naturalwidth and naturalheight
+
+const loadImage = src => {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => resolve(img); // When Image is successfully loaded, resolve the promise
+        img.onerror = () => reject(new Error("Failed to load image. Check the link")) // report error
+    })
+}
+
+const addSponsorElement = async (sponsor) => {
+    const spnImg = await loadImage(sponsor.imageSource) //wait until the image is loaded and assigned to this const  
     mainContainer.innerHTML += 
     `
         <div class="sponsorItem mob-sponsorItem" data-sponsorname=${sponsor.name}>
@@ -419,7 +432,16 @@ spnData.forEach(sponsor => {
             <img class="${spnImg.naturalWidth/spnImg.naturalHeight>175/135?'horizontal':'vertical'} mob-img1" src=${sponsor.imageSource} alt=${sponsor.name}>
             </a>
         </div>
-    `;
-    // Image original aspect ratio will be compared with the aspect ratio of container(175/135 in this case)
-    // to determine the limiting dimension.
-})
+        `;
+        // Image original aspect ratio will be compared with the aspect ratio of container(175/135 in this case)
+        // to determine the limiting dimension.
+}
+
+const addSponsorsInSequence = async () =>{
+    for (const sponsor of spnData){
+        await addSponsorElement(sponsor);
+    }
+}
+
+addSponsorsInSequence();
+
