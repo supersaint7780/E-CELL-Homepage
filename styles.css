@@ -613,16 +613,14 @@ span.text-value {
   align-items: center;
 }
 .sponsorItem {
-  position: relative;
+  padding: 0;
   width: 175px;
   height: 135px;
   background-color: white;
-  border-radius: 5px;
-  /* margin: 16px; */
+  border-radius: 15px;
   border: solid 1px #b9b5b570;
   display: flex;
-  align-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   transition:0.4s;
 }
@@ -630,9 +628,24 @@ span.text-value {
 .sponsorItem:hover{
   transform: translate(0px, -7px) !important;
 }
-.sponsorItem img{
-  width: 115px;
+
+.sponsorItem>a{
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  place-content: center;
+}
+.sponsorItem img.horizontal{
+  /* width: 115px; */
+  width: 100%;
   height: auto;
+}
+.sponsorItem img.vertical{
+  /* width: 115px; */
+  width: auto;
+  height: 100%;
 }
 .sponsorItem-mini {
   width: 90px !important;
@@ -843,7 +856,7 @@ input:focus, textarea:focus, select:focus{
   top: 0px;
   left: 0px;
   color: #fff;
-  pointer-event: none;
+  pointer-events: none;
   font-size: 12px;
   transition: all 0.5s ease-in-out;
 }
