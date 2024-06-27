@@ -13,5 +13,8 @@
     "axios": "^1.7.2",
     "node-html-parser": "^6.1.13",
     "puppeteer": "^22.12.0"
+  },
+  "devDependencies": {
+    "jsdom": "^24.1.0"
   }
 }

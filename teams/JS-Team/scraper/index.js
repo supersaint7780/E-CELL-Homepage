@@ -1,11 +1,11 @@
-import axios, { all } from "axios";
+import axios from "axios";
 import { parse } from 'node-html-parser'
 
 const response = await axios.get('https://www.ecellnitb.in/teams/index.html')
 
 const receivedHTML = response.data
 
-const root = parse(receivedHTML.slice(15,))
+const root = parse(receivedHTML.slice(15,)) // remove unwanted <!DOCTYPE HTML> tag
 
 const allRows = root.querySelector('#faq').querySelector(".full-team");
 
