@@ -850,6 +850,14 @@ const data2 = [
     insta: "https://instagram.com/tarunjaiswal621",
     mail: "mailto:jaiswalt54@gmail.com",
   },
+   {
+    imgLink: "./Images-Team/man.webp",
+    personName: "Sachin Singh",
+    personVertical: "Video Editor",
+    linkedin: "#",
+    insta: "#",
+    mail: "#",
+  },
   {
     imgLink: "./team_images/Tuba Rehman.webp",
     personName: "Tuba Rehman",
@@ -891,14 +899,7 @@ const data2 = [
     insta: "https://www.instagram.com/nihira_1006?igsh=eW9lZ3ZjdXM2eW0x",
     mail: "mailto:kian071005@gmail.com",
   },
-  {
-    imgLink: "./Images-Team/man.webp",
-    personName: "Sachin Singh",
-    personVertical: "Graphic Designer",
-    linkedin: "#",
-    insta: "#",
-    mail: "#",
-  },
+ 
   {
     imgLink: "./team_images/Nidhi Singh Thakur.webp",
     personName: "Nidhi Singh Thakur",
