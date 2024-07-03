@@ -30,7 +30,7 @@ function extractName(url){
         Array.from(cards.children).forEach(elem =>{
             ans.push({
                 website: elem.children[0].href,
-                imageSource: (elem.children[0].children[0].src).replace('https://www.ecellnitb.in','.')
+                imageSource: (elem.children[0].children[0].src).replace('https://esummit.ecellnitb.in','.')
             })
         })
         return ans;
@@ -41,12 +41,14 @@ function extractName(url){
 
     const OldSponsors = await page.evaluate(() => {
         const cards = document.querySelector('#sponsorIcons');
+        
         let ans = [];
         Array.from(cards.children).forEach(elem =>{
+            let imgSrc = (elem.children[0].children[0].src).replace('https://www.ecellnitb.in','.');
             ans.push({
                 website: elem.children[0].href,
-                imageSource: (elem.children[0].children[0].src).replace('https://www.ecellnitb.in','.')
-            })
+                imageSource: imgSrc 
+            });
         })
         return ans;
     });

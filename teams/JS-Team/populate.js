@@ -938,6 +938,8 @@ const populateTeamContainer = (container, data) => {
 
   const rows = Math.ceil(data.length / columns); // Required number of rows
 
+  container.innerHTML = "";
+  
   for (let i = 0; i < rows; i++) {
     const rowElement = document.createElement("div");
     rowElement.className = i == rows - 1 ? "row last-row" : "row";

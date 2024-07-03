@@ -12,6 +12,11 @@ const spnData = [
       imageSource: 'https://esummit.ecellnitb.in/assets/sponsor/rupeexy.webp'
     },
     {
+      name: 'raphemphibr',
+      website: 'https://www.raphe.com/',
+      imageSource: './assets/logo/raphe-mphibr.png'
+    },
+    {
       name: 'bhopalangels',
       website: 'https://bhopalangels.com/',
       imageSource: 'https://esummit.ecellnitb.in/assets/sponsor/bhopal_angels.webp'
@@ -225,11 +230,6 @@ const spnData = [
       name: 't3',
       website: 'https://www.t3.com/',
       imageSource: './assets/images/sponsors/Asset%2031.webp'
-    },
-    {
-      name: 'ecellnitb',
-      website: 'https://www.ecellnitb.in/#',
-      imageSource: './assets/images/sponsors/Asset%2032.webp'
     },
     {
       name: 'linuxlinks',
