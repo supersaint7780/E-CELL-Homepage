@@ -439,7 +439,7 @@ const addSponsorElement = async (sponsor) => {
 
 const addSponsorsInSequence = async () =>{
     for (const sponsor of spnData){
-        await addSponsorElement(sponsor);
+        await addSponsorElement(sponsor); // everytime we add an element, it requires time, because it loades image in it
     }
 }
 
