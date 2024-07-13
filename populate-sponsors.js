@@ -408,24 +408,74 @@ const spnData = [
     }
   ]
 
-const mainContainer = document.getElementById("sponsorIcons");
+  const mediaData =[{
+    name: 'inshorts',
+    website: 'https://inshorts.com/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/inshorts.jpg'
+  },
+  {
+    name: 'redfm',
+    website: 'https://www.redfmindia.in/delhi',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/redfm.png'
+  },
 
-mainContainer.innerHTML = "" //Remove any HTML present inside the container in which we will populate data
+  {
+    name: 'campusvarta',
+    website: 'https://www.campusvarta.com/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/campusvarta.webp'
+  },
+  {
+    name: 'ijb',
+    website: 'https://www.ijb.business/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/itsjustbusinessdaily.jpeg'
+  },
+  {
+    name: 'theglobalhues',
+    website: 'https://theglobalhues.com/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/theglobalhues.jpeg'
+  },
+  {
+    name: 'bhopalsamachar',
+    website: 'https://www.bhopalsamachar.com/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/bhopalsamachar.jpeg'
+  },
+  {
+    name: 'techstory',
+    website: 'https://techstory.in/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/techstory.png'
+  },
+  {
+    name: 'blockpedia',
+    website: 'https://theblockopedia.com/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/blockopedia.png'
+  },
+  {
+    name: 'startupnews',
+    website: 'https://startupnews.fyi/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/startupnewsfyi.jpeg'
+  },
+  {
+    name: 'startuptalky',
+    website: 'https://startuptalky.com/',
+    imageSource: 'https://esummit.ecellnitb.in/assets/media/startuptalky.png'
+  }]
 
-// Asynchronous Code for loading the image from the server and use its naturalwidth and naturalheight
+const spnContainer = document.getElementById("sponsorIcons");
+
+spnContainer.innerHTML = ""
 
 const loadImage = src => {
     return new Promise((resolve, reject) => {
         const img = new Image();
         img.src = src;
-        img.onload = () => resolve(img); // When Image is successfully loaded, resolve the promise
-        img.onerror = () => reject(new Error("Failed to load image. Check the link")) // report error
+        img.onload = () => resolve(img); 
+        img.onerror = () => reject(new Error("Failed to load image. Check the link")) 
     })
 }
 
 const addSponsorElement = async (sponsor) => {
-    const spnImg = await loadImage(sponsor.imageSource) //wait until the image is loaded and assigned to this const  
-    mainContainer.innerHTML += 
+    const spnImg = await loadImage(sponsor.imageSource) 
+    spnContainer.innerHTML += 
     `
         <div class="sponsorItem mob-sponsorItem" data-sponsorname=${sponsor.name}>
             <a href=${sponsor.website}>    
@@ -433,15 +483,37 @@ const addSponsorElement = async (sponsor) => {
             </a>
         </div>
         `;
-        // Image original aspect ratio will be compared with the aspect ratio of container(175/135 in this case)
-        // to determine the limiting dimension.
+        
+}
+
+
+
+const medContainer = document.getElementById("mediaIcons");
+
+medContainer.innerHTML = "" 
+
+
+
+const addMedSponsorElement = async (mediasponsor) => {
+    const medspnImg = await loadImage(mediasponsor.imageSource) //wait until the image is loaded and assigned to this const  
+    medContainer.innerHTML += 
+    `
+        <div class="sponsorItem mob-sponsorItem" data-sponsorname=${mediasponsor.name}>
+            <a href=${mediasponsor.website}>    
+            <img class="${medspnImg.naturalWidth/medspnImg.naturalHeight>175/135?'horizontal':'vertical'} mob-img1" src=${mediasponsor.imageSource} alt=${mediasponsor.name}>
+            </a>
+        </div>
+        `;
+       
 }
 
 const addSponsorsInSequence = async () =>{
-    for (const sponsor of spnData){
-        await addSponsorElement(sponsor); // everytime we add an element, it requires time, because it loades image in it
-    }
+  for (const sponsor of spnData){
+      await addSponsorElement(sponsor);
+  }
+  for (const media of mediaData){
+      await addMedSponsorElement(media);
+}
 }
 
 addSponsorsInSequence();
-
