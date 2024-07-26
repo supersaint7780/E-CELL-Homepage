@@ -17,7 +17,7 @@ const data1 = [
     personVertical: 'Coordinator (Finance)',
     linkedin: 'https://www.linkedin.com/in/krishna-kumar-lalwani-056843226',
     insta: 'about:blank#',
-    mail: 'mailto:vaishnav111002@gmail.com'
+    mail: 'mailto:krishnakumar81038@gmail.com'
   },
   {
     imgLink: 'Images-Team/Aarushi Gulati.webp',
@@ -39,9 +39,9 @@ const data1 = [
     imgLink: 'Images-Team/Aakash Paliwal.webp',
     personName: 'Aakash Paliwal',
     personVertical: 'General Secretary',
-    linkedin: 'https://www.linkedin.com/in/ayushi-tomar-481a0720a/?originalSubdomain=in',
-    insta: 'https://www.instagram.com/_ayushitomar_23/',
-    mail: 'mailto:Officialayushi10@gmail.com'
+    linkedin: 'https://www.linkedin.com/in/ap1008',
+    insta: '#',
+    mail: 'aakash.paliwal123@gmail.com'
   },
   {
     imgLink: 'Images-Team/GOPAL VASHISHTH.webp',
@@ -393,7 +393,7 @@ const data1 = [
     personVertical: 'Promotions Lead',
     linkedin: 'https://www.linkedin.com/in/sanjana-kumari-3bab99258',
     insta: 'https://instagram.com/sanjanaaa._13_?igshid=ZDc4ODBmNjlmNQ==',
-    mail: 'mailto:Sanjanaparul940@gmail.com'
+    mail: 'mailto:sanjanaparul940@gmail.com'
   },
   {
     imgLink: 'Images-Team/Shreya Pandey.webp',
@@ -456,7 +456,7 @@ const data1 = [
     personName: 'Ananya Sharma',
     personVertical: 'Content Creation Secretary',
     linkedin: 'https://www.linkedin.com/in/ananya-sharma-937177262',
-    insta: 'about:blank#',
+    insta: 'https://www.instagram.com/ananyaaasm/',
     mail: 'mailto:ananya2k3sharma@gmail.com'
   },
   {
@@ -553,7 +553,7 @@ const data2 = [
     linkedin:
       "https://www.linkedin.com/in/arundhatii-saxena-62ab3b282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     insta: "https://www.instagram.com/arundhatiisaxena?igsh=bndqanlrODRkN3dy",
-    mail: "arundhatii.saxena@gmail.com",
+    mail: "mailto:arundhatii.saxena@gmail.com",
   },
   {
     imgLink: "./team_images/Muskan Yadav.webp",
@@ -561,7 +561,7 @@ const data2 = [
     personVertical: "Event Manager",
     linkedin:
       "https://www.linkedin.com/in/muskan-yadav-934798290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    insta: "https://www.instagram.com/muskan0o0_?igsh=MTJ6emJ3MGtzMTZlNQ==",
+    insta: "https://www.instagram.com/_muskann_75?igsh=MTJ6emJ3MGtzMTZlNQ==",
     mail: "mailto:mymuskanyadav05@gmail.com",
   },
   {
@@ -747,7 +747,7 @@ const data2 = [
     imgLink: "./team_images/Tanisha Gangrade.webp",
     personName: "Tanisha Gangrade",
     personVertical: "Event Manager",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/tanisha-gangrade-ba496028b",
     insta: "https://instagram.com/tanisha_gangrade",
     mail: "mailto:tanishagangrade29@gmail.com",
   },
@@ -788,7 +788,7 @@ const data2 = [
     imgLink: "./team_images/Nitesh Kumar.webp",
     personName: "Nitesh Kumar",
     personVertical: "Sponsorship Executive",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/-nitesh-kumar",
     insta: "#",
     mail: "mailto:niteshkumar.ecell@gmail.com",
   },
@@ -822,8 +822,8 @@ const data2 = [
     imgLink: "./team_images/Ayush Verma.webp",
     personName: "Ayush Verma",
     personVertical: "Video Editor",
-    linkedin: "#",
-    insta: "#",
+    linkedin: "https://www.linkedin.com/in/ayush-verma-53715b281",
+    insta: "https://www.instagram.com/v_ayush07/?utm_source=ig_web_button_share_sheet",
     mail: "mailto:vayush0704@gmail.com",
   },
   {
@@ -862,7 +862,7 @@ const data2 = [
     imgLink: "./team_images/Tuba Rehman.webp",
     personName: "Tuba Rehman",
     personVertical: "Graphic Designer",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/tuba-rehman-586103203",
     insta: "https://instagram.com/tun4.aaa",
     mail: "mailto:tubarehman545@gmail.com",
   },
@@ -878,7 +878,7 @@ const data2 = [
     imgLink: "./team_images/Geet Talati.webp",
     personName: "Geet Talati",
     personVertical: "Graphic Designer",
-    linkedin: "#",
+    linkedin: "https://www.linkedin.com/in/geet-talati-868851285",
     insta: "https://instagram.com/_geet14/",
     mail: "mailto:geett590@gmail.com",
   },

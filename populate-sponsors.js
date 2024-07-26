@@ -11,11 +11,37 @@ const spnData = [
       website: 'https://rupeezy.in/',
       imageSource: 'https://esummit.ecellnitb.in/assets/sponsor/rupeexy.webp'
     },
+    
     {
       name: 'raphemphibr',
       website: 'https://www.raphe.com/',
       imageSource: './assets/logo/raphe-mphibr.png'
     },
+    
+    {
+      name: 'iim-calcutta',
+      website: 'https://https://www.iimcal.ac.in/faculty/centers-of-excellence/centre-for-entrepreneurship-innovation/iim-calcutta-innovation-park/',
+      imageSource: './assets/logo/iim-calcutta.jpg'
+    },
+
+    {
+      name: 'wadhwani-foundation',
+      website: 'https://wadhwanifoundation.org/',
+      imageSource: './assets/logo/wadhwani-foundation.jpg'
+    },
+    
+    {
+      name: 'i-am-startup',
+      website: 'https://www.linkedin.com/in/i-am-startup-community-india',
+      imageSource: './assets/logo/i-am-startup.jpg'
+    },
+    
+    {
+      name: 'BankOfBaroda',
+      website: 'https://www.bankofbaroda.in/',
+      imageSource: './assets/logo/bob.webp'
+    },
+    
     {
       name: 'bhopalangels',
       website: 'https://bhopalangels.com/',
@@ -75,6 +101,16 @@ const spnData = [
       name: 'papertrade',
       website: 'https://papertrade.live/',
       imageSource: 'https://esummit.ecellnitb.in/assets/sponsor/papertrade.webp'
+    },
+    {
+      name: 'offistore',
+      website: 'https://offistore.in/',
+      imageSource: './assets/logo/offistore.jpg'
+    },
+    {
+      name: 'shekunj',
+      website: 'https://shekunj.com/',
+      imageSource: './assets/logo/shekunj.svg'
     },
     {
       name: 'recklabs',
@@ -237,11 +273,6 @@ const spnData = [
       imageSource: './assets/images/sponsors/Asset%2033.webp'
     },
     {
-      name: 'icreateedu',
-      website: 'https://www.icreateedu.com/',
-      imageSource: './assets/images/sponsors/Asset%2034.webp'
-    },
-    {
       name: 'digitalocean',
       website: 'https://www.digitalocean.com/',
       imageSource: './assets/images/sponsors/Asset%2035.webp'
@@ -260,11 +291,6 @@ const spnData = [
       name: 'codingminutes',
       website: 'https://codingminutes.com/',
       imageSource: './assets/logo/ApnaCast.webp'
-    },
-    {
-      name: 'ecellnitb',
-      website: 'https://www.ecellnitb.in/#',
-      imageSource: './assets/logo/bob.webp'
     },
     {
       name: 'bansalgroup',
@@ -412,6 +438,8 @@ const mainContainer = document.getElementById("sponsorIcons");
 
 mainContainer.innerHTML = "" //Remove any HTML present inside the container in which we will populate data
 
+let HTMLToPush = "";
+
 // Asynchronous Code for loading the image from the server and use its naturalwidth and naturalheight
 
 const loadImage = src => {
@@ -425,7 +453,7 @@ const loadImage = src => {
 
 const addSponsorElement = async (sponsor) => {
     const spnImg = await loadImage(sponsor.imageSource) //wait until the image is loaded and assigned to this const  
-    mainContainer.innerHTML += 
+    HTMLToPush += 
     `
         <div class="sponsorItem mob-sponsorItem" data-sponsorname=${sponsor.name}>
             <a href=${sponsor.website}>    
@@ -437,10 +465,12 @@ const addSponsorElement = async (sponsor) => {
         // to determine the limiting dimension.
 }
 
+
 const addSponsorsInSequence = async () =>{
     for (const sponsor of spnData){
         await addSponsorElement(sponsor); // everytime we add an element, it requires time, because it loades image in it
     }
+    mainContainer.innerHTML = HTMLToPush
 }
 
 addSponsorsInSequence();
