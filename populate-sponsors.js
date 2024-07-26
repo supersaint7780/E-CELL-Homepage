@@ -486,16 +486,13 @@ const spnData = [
     imageSource: 'https://esummit.ecellnitb.in/assets/media/startuptalky.png'
   }]
 
-<<<<<<< HEAD
 let HTMLToPush = "";
 
-// Asynchronous Code for loading the image from the server and use its naturalwidth and naturalheight
-=======
 const spnContainer = document.getElementById("sponsorIcons");
 
 spnContainer.innerHTML = ""
->>>>>>> a4cc30844ef383a773eee0a1b822d6aa34b94aa8
 
+// Asynchronous Code for loading the image from the server and use its naturalwidth and naturalheight
 const loadImage = src => {
     return new Promise((resolve, reject) => {
         const img = new Image();
@@ -506,13 +503,8 @@ const loadImage = src => {
 }
 
 const addSponsorElement = async (sponsor) => {
-<<<<<<< HEAD
     const spnImg = await loadImage(sponsor.imageSource) //wait until the image is loaded and assigned to this const  
     HTMLToPush += 
-=======
-    const spnImg = await loadImage(sponsor.imageSource) 
-    spnContainer.innerHTML += 
->>>>>>> a4cc30844ef383a773eee0a1b822d6aa34b94aa8
     `
         <div class="sponsorItem mob-sponsorItem" data-sponsorname=${sponsor.name}>
             <a href=${sponsor.website}>    
@@ -523,13 +515,9 @@ const addSponsorElement = async (sponsor) => {
         
 }
 
-
-
 const medContainer = document.getElementById("mediaIcons");
 
 medContainer.innerHTML = "" 
-
-
 
 const addMedSponsorElement = async (mediasponsor) => {
     const medspnImg = await loadImage(mediasponsor.imageSource) //wait until the image is loaded and assigned to this const  
@@ -546,19 +534,19 @@ const addMedSponsorElement = async (mediasponsor) => {
 
 
 const addSponsorsInSequence = async () =>{
-<<<<<<< HEAD
     for (const sponsor of spnData){
         await addSponsorElement(sponsor); // everytime we add an element, it requires time, because it loades image in it
     }
-    mainContainer.innerHTML = HTMLToPush
-=======
-  for (const sponsor of spnData){
-      await addSponsorElement(sponsor);
-  }
-  for (const media of mediaData){
+    
+    spnContainer.innerHTML = HTMLToPush
+    
+    for (const sponsor of spnData){
+        await addSponsorElement(sponsor);
+    }
+    
+    for (const media of mediaData){
       await addMedSponsorElement(media);
-}
->>>>>>> a4cc30844ef383a773eee0a1b822d6aa34b94aa8
+    }
 }
 
 addSponsorsInSequence();
