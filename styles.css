@@ -518,6 +518,22 @@ span.number-value {
 span.text-value {
   font-size: 1rem;
 }
+.mob-sponsorIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  width: 100%;
+  height: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#mediasponsor{
+  padding-bottom: 10rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
 @media (max-width:1000px) {
   span.number-value {
     font-size: 1.75rem;
