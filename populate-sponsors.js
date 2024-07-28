@@ -39,7 +39,7 @@ const spnData = [
     {
       name: 'BankOfBaroda',
       website: 'https://www.bankofbaroda.in/',
-      imageSource: './assets/logo/bob.webp'
+      imageSource: './assets/logo/bob.png'
     },
     
     {
