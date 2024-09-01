@@ -254,7 +254,7 @@ const data1 = [
   {
     imgLink: 'Images-Team/Sai Sathwik.webp',
     personName: 'Sai Sathwik',
-    personVertical: 'Public Relations Head',
+    personVertical: 'Public Relations Lead',
     linkedin: 'https://www.linkedin.com/in/sai-sathwik-pabba-56b117250',
     insta: 'https://instagram.com/sathwik_pabba?igshid=MzNlNGNkZWQ4Mg==',
     mail: 'mailto:sathwikgupta04@gmail.com'
@@ -404,28 +404,12 @@ const data1 = [
     mail: 'mailto:pandeyshreya3851@gmail.com'
   },
   {
-    imgLink: 'Images-Team/Sangam Tiwari.webp',
-    personName: 'Sangam Tiwari',
-    personVertical: 'Hospitality Lead',
-    linkedin: 'https://www.linkedin.com/in/sangam-tiwari-a03473257/',
-    insta: 'https://www.instagram.com/sangam.2510/',
-    mail: 'mailto:tiwarisangam2510@gmail.com'
-  },
-  {
     imgLink: 'Images-Team/Ashish Gupta.webp',
     personName: 'Ashish Gupta',
     personVertical: 'Marketing Lead',
     linkedin: 'https://www.linkedin.com/in/ashish-gupta-19a186256',
     insta: 'https://instagram.com/beingashish_gupta?igshid=ZDc4ODBmNjlmNQ==',
     mail: 'mailto:ashishgupta0613@gmail.com'
-  },
-  {
-    imgLink: 'Images-Team/Anika Yaduvanshi.webp',
-    personName: 'Anika Singh Yaduvanshi',
-    personVertical: 'Marketing Secretary',
-    linkedin: 'http://linkedin.com/in/anika-yaduvanshi-980466277',
-    insta: 'https://instagram.com/itsnikanika',
-    mail: 'mailto:anika.singh.yaduvanshi@gmail.com'
   },
   {
     imgLink: 'Images-Team/Pavan Patidar.webp',
@@ -777,14 +761,6 @@ const data2 = [
     mail: "mailto:shreyanshawasthi66@gmail.com",
   },
   {
-    imgLink: "./team_images/Harsh Prakash.webp",
-    personName: "Harsh Prakash",
-    personVertical: "Sponsorship Executive",
-    linkedin: "https://www.linkedin.com/in/harsh-prakash-b83810290/",
-    insta: "https://www.instagram.com/harsh.prakash49/",
-    mail: "mailto:prakash.harsh49@gmail.com",
-  },
-  {
     imgLink: "./team_images/Nitesh Kumar.webp",
     personName: "Nitesh Kumar",
     personVertical: "Sponsorship Executive",
@@ -851,7 +827,7 @@ const data2 = [
     mail: "mailto:jaiswalt54@gmail.com",
   },
    {
-    imgLink: "./Images-Team/man.webp",
+    imgLink: "teams/team_images/Sachin SIingh (1).webp",
     personName: "Sachin Singh",
     personVertical: "Video Editor",
     linkedin: "#",
@@ -918,7 +894,7 @@ const data2 = [
     mail: "mailto:maasir554@gmail.com",
   },
   {
-    imgLink: "./team_images/Sanskar Shrivastava.webp",
+    imgLink: "teams/team_images/Sanskar Shrivastava (2).png",
     personName: "Sanskar Shrivastava",
     personVertical: "Web Developer",
     linkedin:
