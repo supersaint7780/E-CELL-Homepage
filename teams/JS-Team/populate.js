@@ -920,9 +920,14 @@ const populateTeamContainer = (container, data) => {
     const rowElement = document.createElement("div");
     rowElement.className = i == rows - 1 ? "row last-row" : "row";
 
-    container.appendChild(rowElement); // Add newly created div as a child to #modre-team-cards element that is already present in DOM
+    container.appendChild(rowElement); // Add newly created div as a child to #more-team-cards element that is already present in DOM
 
     for (let j = 0; j < columns; j++) {
+    
+      // the algorithm still converts index upto next multiple of 4 as columns is constant : 4
+      // hence, if we are having last row with less than 4 elements, it will still try to access entries in data[] that do not exist uptill 4th element of that row.
+      if (columns * i + j > data.length - 1 ) break; // { Error solved } if converted index > last index of data[], then terminate the operation.
+
       const personData = data[columns * i + j]; // columns*i + j is conversion of index to linear form to access data list
 
       rowElement.innerHTML += `
