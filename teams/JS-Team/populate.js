@@ -827,7 +827,7 @@ const data2 = [
     mail: "mailto:jaiswalt54@gmail.com",
   },
    {
-    imgLink: "teams/team_images/Sachin SIingh (1).webp",
+    imgLink: "./team_images/Sachin SIingh (1).webp",
     personName: "Sachin Singh",
     personVertical: "Video Editor",
     linkedin: "#",
@@ -894,7 +894,7 @@ const data2 = [
     mail: "mailto:maasir554@gmail.com",
   },
   {
-    imgLink: "teams/team_images/Sanskar Shrivastava (2).png",
+    imgLink: "./team_images/Sanskar Shrivastava (2).png",
     personName: "Sanskar Shrivastava",
     personVertical: "Web Developer",
     linkedin:
