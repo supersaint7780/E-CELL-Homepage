@@ -803,14 +803,6 @@ const data2 = [
     mail: "mailto:vayush0704@gmail.com",
   },
   {
-    imgLink: "./team_images/Sanket Gawande.webp",
-    personName: "Sanket Gawande",
-    personVertical: "Video Editor",
-    linkedin: "https://www.linkedin.com/in/sanket-gawande-a8629a281",
-    insta: "https://www.instagram.com/321sanket?igsh=bWVibnU3MmluZmFi",
-    mail: "mailto:sanketgawande989@gmail.com",
-  },
-  {
     imgLink: "./team_images/Sannidhya Srivastava.webp",
     personName: "Saanidhya Srivastava",
     personVertical: "Video Editor",
