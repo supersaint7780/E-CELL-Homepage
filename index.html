@@ -7,62 +7,64 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-Cell NIT Bhopal</title>
-  <meta name="description” content=“Entrepreneurship Cell NIT-Bhopal (MANIT) is a non-profit organization dedicated to encourage start-up culture and building an entrepreneurial environment.Our main events under the E-SUMMIT include Startup Expo, IPL Auction, Content Creation Conclave and others.">
-    <meta name="keywords" content="esummit, summit, esummit2023, ecell, ecell nit bhopal, nit, nit bhopal, entrepreneuship, entrepreneuship summit, buisness conclave, bhopal, asia's largest, india, biggest, business conference, startup expo, networking arena, investors, mentors, startups, corporates, E-Cell Nitb ,NIT Bhopal, MANIT, Entrepreneurship, E-SUMMIT, E-CELL, MANIT, NIT Bhopal, Empowering future, Entrepreneurial enterprise, Talented minds, Campus events, Guest lectures, Workshops, Principles, Team, Strong, Motivated individuals, Vibrant startup culture, Community, Ecosystem, Dreams, Young budding entrepreneurs, Ideas, Initiatives, Startup Community, Online community, Student entrepreneurs, Socialize, Support structure, E-Summit, Flagship event, Entrepreneurial fest, Interactive sessions, Informal events, Basics of entrepreneurship, Entrepreneurial ecosystem, World of entrepreneurship, Pitchers, Pitching, Hackathon, Mentorship, Hustle, Building startup, Preincubation program, Resources, Startup Support, startup, support, Successful startups, India, Collaborating, Collaboration, Clubs, Teams, Companies, Technical, Product, Helping develop, Develop, Product market, Market">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="E-cell nit Bhopal ">
-<meta property="og:description" content="E-Cell MANIT is a non-profit organization run by students working towards creating a culture of entrepreneurship among the students,
+  <meta
+    name="description” content=“Entrepreneurship Cell NIT-Bhopal (MANIT) is a non-profit organization dedicated to encourage start-up culture and building an entrepreneurial environment.Our main events under the E-SUMMIT include Startup Expo, IPL Auction, Content Creation Conclave and others.">
+  <meta name="keywords"
+    content="esummit, summit, esummit2023, ecell, ecell nit bhopal, nit, nit bhopal, entrepreneuship, entrepreneuship summit, buisness conclave, bhopal, asia's largest, india, biggest, business conference, startup expo, networking arena, investors, mentors, startups, corporates, E-Cell Nitb ,NIT Bhopal, MANIT, Entrepreneurship, E-SUMMIT, E-CELL, MANIT, NIT Bhopal, Empowering future, Entrepreneurial enterprise, Talented minds, Campus events, Guest lectures, Workshops, Principles, Team, Strong, Motivated individuals, Vibrant startup culture, Community, Ecosystem, Dreams, Young budding entrepreneurs, Ideas, Initiatives, Startup Community, Online community, Student entrepreneurs, Socialize, Support structure, E-Summit, Flagship event, Entrepreneurial fest, Interactive sessions, Informal events, Basics of entrepreneurship, Entrepreneurial ecosystem, World of entrepreneurship, Pitchers, Pitching, Hackathon, Mentorship, Hustle, Building startup, Preincubation program, Resources, Startup Support, startup, support, Successful startups, India, Collaborating, Collaboration, Clubs, Teams, Companies, Technical, Product, Helping develop, Develop, Product market, Market">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="E-cell nit Bhopal ">
+  <meta property="og:description" content="E-Cell MANIT is a non-profit organization run by students working towards creating a culture of entrepreneurship among the students,
 awakening and encouraging the entrepreneurial spirit of the students.">
-<meta property="og:url" content="https://www.ecellnitb.in">
- <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-<script>
+  <meta property="og:url" content="https://www.ecellnitb.in">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script>
 
- let config = {
-    apiKey: "AIzaSyDsxXUlVdImrkzZgN1hA9fwD-GWGHrk0Mw",
-    authDomain: "ecell-f69fd.firebaseapp.com",
-    databaseURL: "https://ecell-f69fd-default-rtdb.firebaseio.com",
-    projectId: "ecell-f69fd",
-    storageBucket: "ecell-f69fd.appspot.com",
-    messagingSenderId: "742246625764",
-    appId: "1:742246625764:web:9d029cdf99989fb3f9d7f1",
-    measurementId: "G-ER9DWJR9SF"
-};
-firebase.initializeApp(config);
+    let config = {
+      apiKey: "AIzaSyDsxXUlVdImrkzZgN1hA9fwD-GWGHrk0Mw",
+      authDomain: "ecell-f69fd.firebaseapp.com",
+      databaseURL: "https://ecell-f69fd-default-rtdb.firebaseio.com",
+      projectId: "ecell-f69fd",
+      storageBucket: "ecell-f69fd.appspot.com",
+      messagingSenderId: "742246625764",
+      appId: "1:742246625764:web:9d029cdf99989fb3f9d7f1",
+      measurementId: "G-ER9DWJR9SF"
+    };
+    firebase.initializeApp(config);
 
-let datamsg = firebase.database().ref('guestdata');
-const search = new URLSearchParams(window.location.search);
-const paramarr = Array.from(search.entries());
+    let datamsg = firebase.database().ref('guestdata');
+    const search = new URLSearchParams(window.location.search);
+    const paramarr = Array.from(search.entries());
 
-if (paramarr.length > 0 && paramarr[0][1] === 'hackathon') {
-    const date = new Date();
-    const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    const time3 = date.toLocaleDateString();
-    const data = {
+    if (paramarr.length > 0 && paramarr[0][1] === 'hackathon') {
+      const date = new Date();
+      const time = date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const time3 = date.toLocaleDateString();
+      const data = {
         name: paramarr[0][0],
         time: time,
         date: time3
-    };
+      };
 
-    sendMessage(data);
-} else {
- if (window.innerWidth < 500) {
-      window.location.href = "mobile.html";
+      sendMessage(data);
+    } else {
+      if (window.innerWidth < 500) {
+        window.location.href = "mobile.html";
+      }
     }
-}
 
-async function sendMessage(data) {
-    let guestdata = datamsg.push();
-    try {
+    async function sendMessage(data) {
+      let guestdata = datamsg.push();
+      try {
         await guestdata.set(data);
         console.log("done");
-    } catch (err) {
+      } catch (err) {
         console.log(err);
-    } finally {
+      } finally {
         window.location.assign("https://drive.google.com/file/d/1_l0qqEN5f6-9D3o5hfPXtc3149PH0yMY/view?usp=sharing");
+      }
     }
-}
 
-</script>
+  </script>
 
   <!-- <link rel="stylesheet" href="mobile.css" /> -->
   <link rel="stylesheet" href="styles.css">
@@ -75,7 +77,7 @@ async function sendMessage(data) {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
- 
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <style>
@@ -113,7 +115,8 @@ async function sendMessage(data) {
           <div id="hrSlide" style="width: 81px;left: 0px;"></div>
           <li class="nav-link"><a href="?view=about">about us</a></li>
           <li class="nav-link"><a href="?view=guest">speakers</a></li>
-          <li class="nav-link"><a href="https://esummit.ecellnitb.in/">E-Summit <span style="font-family: Poppins;"> '24</a></li>
+          <li class="nav-link"><a href="https://esummit.ecellnitb.in/">E-Summit <span style="font-family: Poppins;">
+                '24</a></li>
           <li class="nav-link"><a href="http://ecell-sponsor.vercel.app/">sponsor us</a></li>
           <!-- <li class="nav-link"><a href="./summit23/index.html">E-Summit<span style="font-family: Poppins;"> '23</span></a></li> -->
           <li class="nav-link"><a href="./teams/index.html">our team</a></li>
@@ -171,32 +174,32 @@ async function sendMessage(data) {
 
         </div>
       </div>
-       <!-- gallery starts -->
-    <section class="gallery">
-      <div class="gallery-head-container">
+      <!-- gallery starts -->
+      <section class="gallery">
+        <div class="gallery-head-container">
           <h3 class="gallery-head-small">Gallery</h3>
           <h2 class="gallery-head-large">Glimpse of E-Summit-24</h2>
-      </div>
-      <div class="scroller" data-direction="left" data-speed="slow">
+        </div>
+        <div class="scroller" data-direction="left" data-speed="slow">
           <div class="scroller__inner">
-              <img src="./assets/glimpses/1.JPG" alt="gallery" />
-              <img src="./assets/glimpses/2.JPG" alt="gallery" />
-              <img src="./assets/glimpses/3.JPG" alt="gallery" />
-              <img src="./assets/glimpses/4.JPG" alt="gallery" />
-              <img src="./assets/glimpses/5.JPG" alt="gallery" />
-              <img src="./assets/glimpses/6.JPG" alt="gallery" />
-              <img src="./assets/glimpses/7.JPG" alt="gallery" />
-              <img src="./assets/glimpses/8.JPG" alt="gallery" />
-              <img src="./assets/glimpses/9.JPG" alt="gallery" />
-              <img src="./assets/glimpses/10.JPG" alt="gallery" />
-              <img src="./assets/glimpses/11.jpg" alt="gallery" />
-              <img src="./assets/glimpses/12.JPG" alt="gallery" />
-              
-            
+            <img src="./assets/glimpses/1.JPG" alt="gallery" />
+            <img src="./assets/glimpses/2.JPG" alt="gallery" />
+            <img src="./assets/glimpses/3.JPG" alt="gallery" />
+            <img src="./assets/glimpses/4.JPG" alt="gallery" />
+            <img src="./assets/glimpses/5.JPG" alt="gallery" />
+            <img src="./assets/glimpses/6.JPG" alt="gallery" />
+            <img src="./assets/glimpses/7.JPG" alt="gallery" />
+            <img src="./assets/glimpses/8.JPG" alt="gallery" />
+            <img src="./assets/glimpses/9.JPG" alt="gallery" />
+            <img src="./assets/glimpses/10.JPG" alt="gallery" />
+            <img src="./assets/glimpses/11.jpg" alt="gallery" />
+            <img src="./assets/glimpses/12.JPG" alt="gallery" />
+
+
           </div>
-      </div>
-  </section>
-  <!-- gallery ends -->
+        </div>
+      </section>
+      <!-- gallery ends -->
       <!-- <div>
         <section class="glimpse" style="display: flex; overflow: hidden; flex-direction: column;">
           <p class="glimpse-head">Glimpse of E-Summit <span style="font-family: 'Montserrat';"> '24 </span></p>
@@ -228,15 +231,15 @@ async function sendMessage(data) {
         <div class="container "
           style="display: flex;align-items: center;justify-content: space-evenly;transform: scale(1.05); padding-bottom: 100px;">
           <div class="sldBtn" onclick="
-                             if(shouldScroll){
-            shouldScroll = false;
-                              var sclL = document.getElementsByClassName('flex-viewport')[0].scrollLeft;
-                              // console.log(sclL);
-                              var bin = sclL - 285;
-                              gsap.to('.flex-viewport', { scrollLeft: bin, duration: 0.2 });
-                              setTimeout(function sldfcn(){shouldScroll = true}, 1000);
-                             }
-                            ">
+              if(shouldScroll){
+                shouldScroll = false;
+                var sclL = document.getElementsByClassName('flex-viewport')[0].scrollLeft;
+                // console.log(sclL);
+                var bin = sclL - 285;
+                gsap.to('.flex-viewport', { scrollLeft: bin, duration: 0.2 });
+                setTimeout(function sldfcn(){shouldScroll = true}, 1000);
+              }
+            ">
             <i class="icon-angle-left gdlr-flex-prev" style="height: 30px;"></i>
           </div>
           <div class="speaker-item-wrapper " style="margin: 0px 0px">
@@ -245,22 +248,22 @@ async function sendMessage(data) {
                 <div class="flexslider" data-type="carousel" data-nav-container="speaker-item-wrapper" data-columns="4">
                   <div class="flex-viewport" style="overflow: hidden; position: relative; width: 1140px">
                     <ul class="slides" style="width: 1600%">
-                      
-
-                      <li class="gdlr-item gdlr-speaker-item" style="
-                                              width: 255px;
-                                              float: left;
-                                              display: block;
-                                              margin-left: 15px;
-                                            ">
+                      <li class="gdlr-item gdlr-speaker-item" style="width: 255px;float: left;display: block;margin-left: 15px;">
                         <div class="gdlr-speaker-thumbnail scrollbox">
-                          <img src="./speakers_new/tanu.png" alt="Tanu Jain" width="600" height="431" draggable="false" /><span
-                            class="gdlr-speaker-thumbnail-overlay"></span><span
-                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#"
-                              target="_blank"><i class="fa fa-twitter"></i></a><a
-                              href="#"
-                              target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
-                                class="fa fa-linkedin"></i></a></span>
+                          <img src="./speakers_new/tanu.png" alt="Tanu Jain" width="600" height="431"
+                            draggable="false" />
+                            <span class="gdlr-speaker-thumbnail-overlay"></span>
+                            <span class="gdlr-speaker-thumbnail-overlay-icon">
+                              <a href="#" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                              </a>
+                              <a href="#" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                              </a>
+                              <a href="#" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                              </a>
+                            </span>
                         </div>
                         <div class="gdlr-speaker-item-content">
                           <h3 class="gdlr-speaker-item-title gdlr-skin-title">
@@ -270,9 +273,9 @@ async function sendMessage(data) {
                             Founder, Tathastu ICS <br> Ex-Bureaucrat
                           </div>
                         </div>
-                        
+
                       </li>
-<!-- 
+                      <!-- 
                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./speakers_new/mithoon.png" alt="Mitoon" width="600" height="431" draggable="false" /><span
@@ -296,12 +299,11 @@ async function sendMessage(data) {
 
                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
-                          <img src="./speakers_new/nv.png" alt="Nitin Vijay" width="600" height="431" draggable="false" /><span
-                            class="gdlr-speaker-thumbnail-overlay"></span><span
-                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#"
-                              target="_blank"><i class="fa fa-twitter"></i></a><a
-                              href="#"
-                              target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
+                          <img src="./speakers_new/nv.png" alt="Nitin Vijay" width="600" height="431"
+                            draggable="false" /><span class="gdlr-speaker-thumbnail-overlay"></span><span
+                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#" target="_blank"><i
+                                class="fa fa-twitter"></i></a><a href="#" target="_blank"><i
+                                class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
                                 class="fa fa-linkedin"></i></a></span>
                         </div>
                         <div class="gdlr-speaker-item-content">
@@ -315,13 +317,12 @@ async function sendMessage(data) {
                       </li>
                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
-                          <img src="./speakers_new/anubhav.png" alt="Anubhav Dubey" width="600" height="431" draggable="false" /><span
-                            class="gdlr-speaker-thumbnail-overlay"></span><span
-                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#"
-                              target="_blank"><i class="fa fa-twitter"></i></a><a
-                              href="#" target="_blank"><i
-                                class="fa fa-facebook"></i></a><a href="#"
-                              target="_blank"><i class="fa fa-linkedin"></i></a></span>
+                          <img src="./speakers_new/anubhav.png" alt="Anubhav Dubey" width="600" height="431"
+                            draggable="false" /><span class="gdlr-speaker-thumbnail-overlay"></span><span
+                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#" target="_blank"><i
+                                class="fa fa-twitter"></i></a><a href="#" target="_blank"><i
+                                class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
+                                class="fa fa-linkedin"></i></a></span>
                         </div>
                         <div class="gdlr-speaker-item-content">
                           <h3 class="gdlr-speaker-item-title gdlr-skin-title">
@@ -335,13 +336,14 @@ async function sendMessage(data) {
 
                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
-                          <img src="./assets/images/sp/narhariji.webp" alt="Shri P Nahari Ji" width="600" height="431" draggable="false" /><span
-                            class="gdlr-speaker-thumbnail-overlay"></span><span
+                          <img src="./assets/images/sp/narhariji.webp" alt="Shri P Nahari Ji" width="600" height="431"
+                            draggable="false" /><span class="gdlr-speaker-thumbnail-overlay"></span><span
                             class="gdlr-speaker-thumbnail-overlay-icon"><a href="https://twitter.com/pnarahari"
                               target="_blank"><i class="fa fa-twitter"></i></a><a
                               href="https://www.facebook.com/narahari.ias/" target="_blank"><i
-                                class="fa fa-facebook"></i></a><a href="https://in.linkedin.com/in/parikipandla-narahari-ias-8a351436"
-                              target="_blank"><i class="fa fa-linkedin"></i></a></span>
+                                class="fa fa-facebook"></i></a><a
+                              href="https://in.linkedin.com/in/parikipandla-narahari-ias-8a351436" target="_blank"><i
+                                class="fa fa-linkedin"></i></a></span>
                         </div>
                         <div class="gdlr-speaker-item-content">
                           <h3 class="gdlr-speaker-item-title gdlr-skin-title">
@@ -353,7 +355,7 @@ async function sendMessage(data) {
                         </div>
                       </li>
 
-<!--                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
+                      <!--                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./speakers_new/gaurav.png" alt="Gaurav" width="600" height="431" draggable="false" /><span
                             class="gdlr-speaker-thumbnail-overlay"></span><span
@@ -372,7 +374,7 @@ async function sendMessage(data) {
                           </div>
                         </div>
                       </li> -->
-<!--                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
+                      <!--                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./speakers_new/nidhi.png" alt="Nidhi" width="600" height="431" draggable="false" /><span
                             class="gdlr-speaker-thumbnail-overlay"></span><span
@@ -391,17 +393,16 @@ async function sendMessage(data) {
                           </div>
                         </div>
                       </li> -->
-                      
-                     
+
+
                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
-                          <img src="./speakers_new/sarad.png" alt="Sarad" width="600" height="431" draggable="false" /><span
-                            class="gdlr-speaker-thumbnail-overlay"></span><span
-                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#"
-                              target="_blank"><i class="fa fa-twitter"></i></a><a
-                              href="#" target="_blank"><i
-                                class="fa fa-facebook"></i></a><a href="#"
-                              target="_blank"><i class="fa fa-linkedin"></i></a></span>
+                          <img src="./speakers_new/sarad.png" alt="Sarad" width="600" height="431"
+                            draggable="false" /><span class="gdlr-speaker-thumbnail-overlay"></span><span
+                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#" target="_blank"><i
+                                class="fa fa-twitter"></i></a><a href="#" target="_blank"><i
+                                class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
+                                class="fa fa-linkedin"></i></a></span>
                         </div>
                         <div class="gdlr-speaker-item-content">
                           <h3 class="gdlr-speaker-item-title gdlr-skin-title">
@@ -415,12 +416,11 @@ async function sendMessage(data) {
 
                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
-                          <img src="./speakers_new/sunil.png" alt="Sunil" width="600" height="431" draggable="false" /><span
-                            class="gdlr-speaker-thumbnail-overlay"></span><span
-                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#"
-                              target="_blank"><i class="fa fa-twitter"></i></a><a
-                              href="#"
-                              target="_blank"><i class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
+                          <img src="./speakers_new/sunil.png" alt="Sunil" width="600" height="431"
+                            draggable="false" /><span class="gdlr-speaker-thumbnail-overlay"></span><span
+                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#" target="_blank"><i
+                                class="fa fa-twitter"></i></a><a href="#" target="_blank"><i
+                                class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
                                 class="fa fa-linkedin"></i></a></span>
                         </div>
                         <div class="gdlr-speaker-item-content">
@@ -428,17 +428,16 @@ async function sendMessage(data) {
                             <a href="#">Sunil Sharma</a>
                           </h3>
                           <div class="gdlr-speaker-item-position gdlr-info-font gdlr-skin-info">
-                           Founder Coingape Media <br> And Squadx Innovation
+                            Founder Coingape Media <br> And Squadx Innovation
                           </div>
                         </div>
                       </li>
                       <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
-                          <img src="./speakers_new/vikas.png" alt="Vikas Swarup" width="600" height="431" draggable="false" /><span
-                            class="gdlr-speaker-thumbnail-overlay"></span><span
-                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#"
-                              target="_blank"><i class="fa fa-twitter"></i></a><a
-                              href="#" target="_blank"><i
+                          <img src="./speakers_new/vikas.png" alt="Vikas Swarup" width="600" height="431"
+                            draggable="false" /><span class="gdlr-speaker-thumbnail-overlay"></span><span
+                            class="gdlr-speaker-thumbnail-overlay-icon"><a href="#" target="_blank"><i
+                                class="fa fa-twitter"></i></a><a href="#" target="_blank"><i
                                 class="fa fa-facebook"></i></a><a href="#" target="_blank"><i
                                 class="fa fa-linkedin"></i></a></span>
                         </div>
@@ -492,7 +491,7 @@ async function sendMessage(data) {
                           </div>
                         </div>
                       </li> -->
-                      
+
 
                       <!-- <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
@@ -534,7 +533,7 @@ async function sendMessage(data) {
                           </div>
                         </div>
                       </li> -->
-                      
+
                       <!-- <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./assets/images/sp/12.webp" alt="Naman Deshmukh" width="600" height="431" draggable="false" /><span
@@ -554,7 +553,7 @@ async function sendMessage(data) {
                           </div>
                         </div>
                       </li> -->
-                      
+
                       <!-- <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./assets/images/sp/5.webp" alt="Ryan Foland" width="600" height="431" draggable="false" /><span
@@ -574,7 +573,7 @@ async function sendMessage(data) {
                           </div>
                         </div>
                       </li> -->
-                      
+
                       <!-- <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./assets/images/sp/7.webp" alt="Raoul Pal" width="600" height="431" draggable="false" /><span
@@ -617,7 +616,7 @@ async function sendMessage(data) {
                         </div>
                       </li> -->
 
-                      
+
                       <!-- <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./assets/images/sp/10.webp" alt="Abhilash Misra" width="600" height="431" draggable="false" /><span
@@ -637,8 +636,8 @@ async function sendMessage(data) {
                           </div>
                         </div>
                       </li> -->
-                      
-                      
+
+
                       <!-- <li class="gdlr-item gdlr-speaker-item" style="width: 255px; float: left; display: block">
                         <div class="gdlr-speaker-thumbnail">
                           <img src="./assets/images/sp/13.webp" alt="Shakti Singh Shekhawat" width="600" height="431" draggable="false" /><span
@@ -726,9 +725,7 @@ async function sendMessage(data) {
               </div>
             </div>
           </div>
-          <div 
-            class="sldBtn" 
-            onclick="
+          <div class="sldBtn" onclick="
             if(shouldScroll){
               shouldScroll = false;
               var sclL = document.getElementsByClassName('flex-viewport')[0].scrollLeft;
@@ -1186,7 +1183,8 @@ background-attachment: fixed;">
             Just kept for developers, for referencing the structure  
       -->
       <div class="sponsorItem mob-sponsorItem ">
-        <a href="https://skill-lync.com/"><img class="mob-img1"src="./assets/images/sponsors/Asset 5.webp" alt="Skill Lync Logo"></a>
+        <a href="https://skill-lync.com/"><img class="mob-img1" src="./assets/images/sponsors/Asset 5.webp"
+            alt="Skill Lync Logo"></a>
       </div>
 
     </div>
@@ -1196,8 +1194,8 @@ background-attachment: fixed;">
       <div class="sponsor-head mob-sponsor-head">Our Media Sponsors</div>
     </center>
     <div id="mediaIcons" class="mob-sponsorIcons">
-      
-      
+
+
 
     </div>
   </div>
@@ -1265,7 +1263,9 @@ background-attachment: fixed;">
                   margin-top: 0px;
                   margin-bottom: 36px;
                   color: #D99343;
-              ">Contact Us</h2>
+              ">
+              Contact Us
+            </h2>
           </div>
           <div class="info-our">
             <div class="info-our-body">
@@ -1281,11 +1281,9 @@ background-attachment: fixed;">
             </div>
             <div class="info-our-body">
               <i class="fas fa-map-marker-alt">&nbsp;</i>
-              <div style="
-                    display: inline-block;
-                    width: 22em;
-                    vertical-align: middle;
-                " class="mact">Maulana Azad National Institute of Technology, Bhopal</div>
+              <div style="display: inline-block; width: 22em; vertical-align: middle;" class="mact">
+                Maulana Azad National Institute of Technology, Bhopal
+              </div>
             </div>
           </div>
         </div>
@@ -1308,8 +1306,6 @@ background-attachment: fixed;">
         </form>
       </div>
     </div>
-
-
   </div>
   <style>
     .events-overlay {
@@ -1399,59 +1395,54 @@ background-attachment: fixed;">
     }
   </style>
   <script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(ScrollToPlugin);
+    // gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollToPlugin);
 
-    gsap.utils.toArray(".scrollbox").forEach(function (elem, i) {
-      ScrollTrigger.create({
-        trigger: elem,
-        onEnter: function ({ progress, direction, isActive }) {
+    // gsap.utils.toArray(".scrollbox").forEach(function (elem, i) {
+    //   ScrollTrigger.create({
+    //     trigger: elem,
+    //     onEnter: function ({ progress, direction, isActive }) {
 
-          let hrSlideLeft = document.getElementById("hrSlide");
-          let wid = document.getElementsByTagName("li")[i].getBoundingClientRect().width - 32;
-          hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i + 1) * 2) + ((i >= 0) ? -(i * 2) : 0) + 10 + "px";
-          hrSlideLeft.style.width = wid + "px";
-          for (n = 0; n < 4; n++) {
-            if (n == i) {
-              document.getElementsByTagName("li")[n].firstChild.style.color = "rgba(217, 147, 67, 1)";
-            } else {
-              document.getElementsByTagName("li")[n].firstChild.style.color = "white";
-            }
-          }
-
-
-
-
-        },
-        onEnterBack: function ({ progress, direction, isActive }) {
-
-          let hrSlideLeft = document.getElementById("hrSlide");
-          let wid = document.getElementsByTagName("li")[i].getBoundingClientRect().width - 32;
-          // hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i!=0||i!=1)?((i+1)*2):(-2)) + 10 + "px";
-
-          hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i + 1) * 2) + ((i >= 0) ? -(i * 2) : 0) + 10 + "px";
-          hrSlideLeft.style.width = wid + "px";
-          for (n = 0; n < 4; n++) {
-            document.getElementsByTagName("li")[n].firstChild.style.color = "white";
-          }
-          document.getElementsByTagName("li")[i].firstChild.style.color = "rgba(217, 147, 67, 1)";
+    //       let hrSlideLeft = document.getElementById("hrSlide");
+    //       let wid = document.getElementsByTagName("li")[i].getBoundingClientRect().width - 32;
+    //       hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i + 1) * 2) + ((i >= 0) ? -(i * 2) : 0) + 10 + "px";
+    //       hrSlideLeft.style.width = wid + "px";
+    //       for (n = 0; n < 4; n++) {
+    //         if (n == i) {
+    //           document.getElementsByTagName("li")[n].firstChild.style.color = "rgba(217, 147, 67, 1)";
+    //         } else {
+    //           document.getElementsByTagName("li")[n].firstChild.style.color = "white";
+    //         }
+    //       }
 
 
 
-        },
-        onLeave: function () {
 
-        },
-        onLeaveBack: function () {
-          if (i == 0) {
-            for (n = 0; n < 4; n++) {
-              document.getElementsByTagName("li")[n].firstChild.style.color = "white";
-            }
-          }
+    //     },
+    //     onEnterBack: function ({ progress, direction, isActive }) {
 
-        },
-      });
-    });
+    //       let hrSlideLeft = document.getElementById("hrSlide");
+    //       let wid = document.getElementsByTagName("li")[i].getBoundingClientRect().width - 32;
+    //       // hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i!=0||i!=1)?((i+1)*2):(-2)) + 10 + "px";
+
+    //       hrSlideLeft.style.left = document.getElementsByTagName("li")[i].getBoundingClientRect().left + ((i + 1) * 2) + ((i >= 0) ? -(i * 2) : 0) + 10 + "px";
+    //       hrSlideLeft.style.width = wid + "px";
+    //       for (n = 0; n < 4; n++) {
+    //         document.getElementsByTagName("li")[n].firstChild.style.color = "white";
+    //       }
+    //       document.getElementsByTagName("li")[i].firstChild.style.color = "rgba(217, 147, 67, 1)";
+    //     },
+    //     onLeave: function () { },
+    //     onLeaveBack: function () {
+    //       if (i == 0) {
+    //         for (n = 0; n < 4; n++) {
+    //           document.getElementsByTagName("li")[n].firstChild.style.color = "white";
+    //         }
+    //       }
+    //     },
+    //   });
+    // });
+
   </script>
 </body>
 
