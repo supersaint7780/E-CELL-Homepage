@@ -582,15 +582,7 @@ const data2 = [
     insta: "#",
     mail: "mailto:rismeshbohare@gmail.com",
   },
-  {
-    imgLink: "./team_images/samridhi goyal.webp",
-    personName: "Samridhi Goyal",
-    personVertical: "Event Manager",
-    linkedin:
-      "https://www.linkedin.com/in/samridhi-goyal-ab24a6290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    insta: "https://www.instagram.com/samridhi_018/",
-    mail: "mailto:goyalsamridhi2005@gmail.com",
-  },
+  
   {
     imgLink: "./team_images/Vibha Lodhi.webp",
     personName: "Vibha Lodhi",
