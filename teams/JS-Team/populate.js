@@ -531,15 +531,6 @@ const data2 = [
     mail: "mailto:rashikaagrawal8428@gmail.com",
   },
   {
-    imgLink: "./team_images/Arundhatii Saxena.webp",
-    personName: "Arundhatii Saxena",
-    personVertical: "Content Writer",
-    linkedin:
-      "https://www.linkedin.com/in/arundhatii-saxena-62ab3b282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    insta: "https://www.instagram.com/arundhatiisaxena?igsh=bndqanlrODRkN3dy",
-    mail: "mailto:arundhatii.saxena@gmail.com",
-  },
-  {
     imgLink: "./team_images/Muskan Yadav.webp",
     personName: "Muskan Yadav",
     personVertical: "Event Manager",
