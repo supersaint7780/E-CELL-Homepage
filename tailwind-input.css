@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.swiper-pagination-bullet{
+    background-color: white !important;
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: goldenrod !important;
+    opacity: 1 !important;
+}
