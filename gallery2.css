@@ -1,0 +1,41 @@
+.swiper-slide{
+    /* background-image: url(./assets/event-gallery/e2.webp); */
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+.swiper-slide1{
+    background-image: url(event-gallery/one.png);
+}
+
+.swiper-slide2{
+    background-image: url(event-gallery/e2.JPG);
+}
+.swiper-slide3{
+    background-image: url(event-gallery/e3.JPG);
+}
+.swiper-slide4{
+    background-image: url(event-gallery/e4.JPG);
+}
+.swiper-slide5{
+    background-image: url(event-gallery/e5.JPG);
+}
+.swiper-slide6{
+    background-image: url(event-gallery/e6.JPG);
+}
+.swiper-slide7{
+    background-image: url(event-gallery/e7.JPG);
+}
+.swiper-slide8{
+    background-image: url(event-gallery/e8.JPG);
+}
+
+.swiper-slide9{
+    background-image: url(event-gallery/e9.JPG);
+}
+.swiper-slide10{
+    background-image: url(event-gallery/e10.jpg);
+}
+

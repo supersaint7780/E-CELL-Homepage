@@ -18,8 +18,13 @@ awakening and encouraging the entrepreneurial spirit of the students.">
   <!-- <link rel="stylesheet" href="styles.css" /> -->
   <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
   <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="gallery2.css">
   <link rel="icon" href="favicon.ico">
   <script src="https://kit.fontawesome.com/cf853307e4.js" crossorigin="anonymous"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -150,19 +155,61 @@ async function sendMessage(data) {
           Furthermore, E-Cell NIT-B is privileged to boast a robust network of accomplished alumni and industry experts, ever-eager to nurture your ideas and propel your entrepreneurial voyage into the boundless realms of possibility.
         </div>
       </div>
-      <section class="glimpse">
-        <h1 class="glimpse-head">
-          Glimpse of
-          <br>E-Summit <span class="glimpse-head-number">'24</span>
+      <section id="event-gallery" class="relative w-full px-3 sm:px-7 md:px-10 py-10 flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-12 bg-black  bg-cover bg-no-repeat">
+    
+        <h2 class="hid text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#FFF9F9] font-semibold translate-y-3/4">
+          Gallery
+        </h2>
+    
+        <h1 class="hid w-full bg-gradient-to-r from-[#ffffff] via-primary to-[#ffffff] text-center font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-transparent bg-clip-text">
+          Glimpse of E-Summit'24
         </h1>
-        <div class="glimpse-image">
-          <img src="Group 3017.webp" alt="glimpse">
+    
+        <div id="carousel-encloser" class="z-10 w-full flex flex-row justify-center items-center gap-3 sm:gap-7 md:gap-10 relative">
+            <span id="carousel-left" class="cursor-pointer rounded-full border-2 border-primary hover:border-white active:scale-95 w-[5%] min-w-[35px] max-w-[80px] aspect-square flex justify-center items-center">
+    
+              <svg class="w-2/5 h-auto text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+              </svg>
+    
+            </span>
+    
+            <div id="carousel-display" class="++swiper w-full max-w-2xl aspect-[1.5/1] border-2 border-primary rounded-lg md:rounded-2xl flex flex-row flex-nowrap relative overflow-hidden">
+                
+              <span id="carousel-reel" data-activeIndex="0" class="swiper-wrapper top-0 left-0 w-full h-full transition-transform ">
+                    <span class="swiper-slide flex  w-full h-full swiper-slide1"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide2"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide3"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide4"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide5"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide6"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide7"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide8"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide9"></span>
+                    <span class="swiper-slide flex  w-full h-full swiper-slide10"></span>
+                </span>
+            </div>
+    
+            <div id="horizontal-d" class="z-40 w-full h-1/6 bg-black absolute bottom-0 border-t-2 border-primary left-1/2 -translate-x-1/2 translate-y-1/2 rounded-[100%]"></div>
+            
+            <span id="carousel-right" class="cursor-pointer rounded-full border-2 border-primary hover:border-white active:scale-95 w-[5%] min-w-[35px] max-w-[80px] aspect-square flex justify-center items-center">
+    
+              <svg class="w-2/5 h-auto text-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+    
+            </span>
         </div>
-        <div class="glimpse-bottom">
-          <a href="https://ecellnitb.in/summit23/">
-            <div class="button">View more <img src="CkExternalLink.svg" alt=""></div>
-          </a>
-        </div>
+    
+        <span id="carousel-dots" class="flex justify-center gap-4 sm:gap-3 md:gap-2 relative z-50 -translate-y-5">
+            <!-- <span data-index="0" class=" w-2 sm:w-3 md:w-4 aspect-square cursor-pointer rounded-full bg-primary"></span>
+            <span data-index="1" class=" w-2 sm:w-3 md:w-4 aspect-square cursor-pointer rounded-full bg-white"></span>
+            <span data-index="2" class=" w-2 sm:w-3 md:w-4 aspect-square cursor-pointer rounded-full bg-white"></span>
+            <span data-index="3" class=" w-2 sm:w-3 md:w-4 aspect-square cursor-pointer rounded-full bg-white"></span> -->
+            <span id="carousel-bullets" class="z-50"></span>
+        </span>
+    
+        <div class="z-0 absolute bottom-0 left-0 right-0 h-full bg-gradient-to-b from-transparent to-black"></div>
       </section>
       <div id="guest">
         <div class="head speaker-hd mob-speaker-hd">
@@ -1916,6 +1963,8 @@ async function sendMessage(data) {
       });
     });
   </script>
+  <script src="carousel-2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 <!-- nav script starts here -->
