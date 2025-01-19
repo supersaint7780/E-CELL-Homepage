@@ -468,14 +468,6 @@ const data1 = [
     mail: 'mailto:yogn7294@gmail.com'
   },
   {
-    imgLink: 'Images-Team/Naman Santoshi.webp',
-    personName: 'Naman Santoshi',
-    personVertical: 'Video Editing Lead',
-    linkedin: 'https://www.linkedin.com/in/naman-santoshi-1b6541277',
-    insta: 'https://instagram.com/na._._.man?igshid=MzNlNGNkZWQ4Mg==',
-    mail: 'mailto:tasky1adi5195@gmail.com'
-  },
-  {
     imgLink: 'Images-Team/Priyansh Malviya.webp',
     personName: 'Priyansh Malviya',
     personVertical: 'Cinematograhy Lead',
