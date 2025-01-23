@@ -567,30 +567,12 @@ const data2 = [
   },
   
   {
-    imgLink: "./team_images/Vibha Lodhi.webp",
-    personName: "Vibha Lodhi",
-    personVertical: "Event Manager",
-    linkedin: "https://www.linkedin.com/in/vibha-lodhi",
-    insta: "https://www.instagram.com/vibhalodhi765?igsh=MTFwZmN3MWFkemF2Nw==",
-    mail: "mailto:lodhivibha765@gmail.com",
-  },
-  {
     imgLink: "./team_images/Kuhu Agrawal.webp",
     personName: "Kuhu Agarwal",
     personVertical: "Event Manager",
     linkedin: "https://www.linkedin.com/in/kuhu-agrawal-2859a127b",
     insta: "https://www.instagram.com/kuhuagrawal51?igsh=N2N3YnY2dzN0bHl5",
     mail: "mailto:kuhupihu33@gmail.com",
-  },
-  {
-    imgLink: "./team_images/akanksha jaiswal.webp",
-    personName: "Akanksha Jaiswal",
-    personVertical: "Event Manager",
-    linkedin:
-      "https://www.linkedin.com/in/akanksha-jaiswal-3439a5282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    insta:
-      "https://www.instagram.com/akanksha.jaiswal23?igsh=MXgydmNrcXJobnBjYw==",
-    mail: "mailto:akanksha230412@gmail.com",
   },
   {
     imgLink: "./team_images/Gurleen Kaur Bhatia.webp",
