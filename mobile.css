@@ -1166,7 +1166,7 @@ iframe{
 
 .mobevents {
   background-image: url(past\ event\ mobile\ view\ bg.webp) !important;
-  height: 173vh !important;
+  height: 200vh !important;
  background-attachment: fixed !important;
   background-repeat: no-repeat !important;
 }
@@ -1223,7 +1223,7 @@ iframe{
   align-items: center;
   padding: 0px 0px 30px 0 !important;
   box-sizing: border-box;
-  margin-block-end: 135px;
+  margin-block-end: 25px;
 
   display: flex;
   flex-direction: row;
@@ -1253,8 +1253,8 @@ iframe{
 
 #mediasponsor{
   padding-bottom: 10rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  /* padding-left: 4rem; */
+  /* padding-right: 4rem; */
 }
 
 .mob-img {
