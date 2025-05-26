@@ -761,7 +761,7 @@ const data2 = [
   },
   {
     imgLink: "./team_images/Sannidhya Srivastava.webp",
-    personName: "Saanidhya Srivastava",
+    personName: "Sannidhya Srivastava",
     personVertical: "Video Editor",
     linkedin: "https://www.linkedin.com/in/sannidhya-srivastava-4976a9277/",
     insta: "https://www.instagram.com/_sann1dh_/",
