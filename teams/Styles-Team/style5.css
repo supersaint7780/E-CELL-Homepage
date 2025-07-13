@@ -1,4 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@400;600;700;800&display=swap");
+#more-team-cards .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 0; /* 40px row gap, no column gap (handled by width) */
+}
+
+#more-team-cards .teams-column {
+  margin: 0 !important;
+  flex: 0 0 25%;
+  max-width: 25%;
+  min-width: 220px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  #more-team-cards .teams-column {
+   flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #more-team-cards .teams-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 0;
+  }
+}
+
+#more-team-cards .image-encloser {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+ 
+#more-team-cards .image-encloser > .main-img,
+#more-team-cards .image-encloser > .blur-img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#more-team-cards .teams-column {
+  padding: 3% 2% !important;
+  margin-bottom: 32px !important;
+}
+
+#more-team-cards .card {
+  margin-bottom: 0 !important;
+}
+
 
 
 
@@ -130,35 +199,43 @@ svg {
   }
 }
 
-.image-encloser{
+
+.image-encloser {
   width: 75%;
   aspect-ratio: 1/1;
   border-radius: 100%;
   overflow: hidden;
   position: relative;
-  transition: transform 0.5s ease
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.image-encloser:hover{
+.image-encloser:hover {
   transform: scale(1.05);
 }
 
-.image-encloser>.main-img{
-  position: absolute;
-  height: 100%;
-  width: auto;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-.image-encloser>.blur-img{
-  position: absolute;
+.image-encloser > .main-img,
+.image-encloser > .blur-img {
   width: 100%;
   height: auto;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.image-encloser > .blur-img {
   filter: blur(5px);
+  z-index: 1;
+}
+.image-encloser > .main-img {
+  z-index: 2;
 }
