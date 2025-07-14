@@ -253,7 +253,7 @@ const data1 = [
   mail: 'mailto:pandeyshreya3851@gmail.com'
 },
 {
-  imgLink: 'Images-Team/Siddak Rajpal.webp',
+  imgLink: 'Images-Team/siddak Rajpal.webp',
   personName: 'Siddak Rajpal',
   personVertical: 'Executive',
   linkedin: 'https://www.linkedin.com/in/siddak-rajpal-21b32b233/',
