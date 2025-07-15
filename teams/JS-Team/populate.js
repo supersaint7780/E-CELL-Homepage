@@ -269,7 +269,6 @@ const data1 = [
   mail: 'mailto:yogn7294@gmail.com'
 },
 
-  
   {
     "imgLink": "./team_images/Nachiket Bakshi.webp",
     "personName": "Nachiket Bakshi",
@@ -602,7 +601,7 @@ const data2 = [
     "personName": "Bhavish Chandra ",
     "personVertical": "Content Writer",
     "linkedin": "https://www.linkedin.com/in/bhavish-chandra-311533313",
-    "insta": "bhavish_chandra",
+    "insta": "https://www.instagram.com/bhavish_chandra",
     "mail": "mailto:bhavishchandra14431@gmail.com"
   },
   {
@@ -610,7 +609,7 @@ const data2 = [
     "personName": "Sakina Latsaheb",
     "personVertical": "Content Writer",
     "linkedin": "https://www.linkedin.com/in/sakina-latsaheb-34978534b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "insta": "_.sakina19",
+    "insta": "https://www.instagram.com/_.sakina19",
     "mail": "mailto:sakina52.latsaheb@gmail.com"
   },
   {
@@ -626,7 +625,7 @@ const data2 = [
     "personName": "Vishakha Udassi",
     "personVertical": "Content Writer",
     "linkedin": "https://www.linkedin.com/in/vishakha-udassi-ab113a348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    "insta": "vishakha_2705",
+    "insta": "https://www.instagram.com/vishakha_2705",
     "mail": "mailto:vudassi2705@gmail.com"
   },
   {
@@ -634,7 +633,7 @@ const data2 = [
     "personName": "Aryan Patel ",
     "personVertical": "Event Manager",
     "linkedin": "https://www.linkedin.com/in/aryan-patel-884544318",
-    "insta": "aryanpatel_2805",
+    "insta": "https://www.instagram.com/aryanpatel_2805",
     "mail": "mailto:arynpatel2016@gmail.com"
   },
   {
@@ -658,7 +657,7 @@ const data2 = [
     "personName": "Shraddha Rathore ",
     "personVertical": "Event Manager",
     "linkedin": "https://www.linkedin.com/in/shraddha-rathore-5573a7329",
-    "insta": "shraddha_rathore__",
+    "insta": "https://www.instagram.com/shraddha_rathore__",
     "mail": "mailto:rathoreshraddha199@gmail.com"
   },
   {
@@ -722,7 +721,7 @@ const data2 = [
     "personName": "Tanishka Meena",
     "personVertical": "Event Manager",
     "linkedin": "https://www.linkedin.com/in/tanishka-meena-10aa72323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "insta": "tanishka_6091",
+    "insta": "https://www.instagram.com/tanishka_6091",
     "mail": "mailto:tanishkameena897@gmail.com"
   },
   {
@@ -730,7 +729,7 @@ const data2 = [
     "personName": "Krish Jaiswal ",
     "personVertical": "Event Manager",
     "linkedin": "https://www.linkedin.com/in/krish-jaiswal-b6770123b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "insta": "philosophical_krish ",
+    "insta": "https://www.instagram.com/philosophical_krish ",
     "mail": "mailto:kjkrishh0982@gmail.com"
   },
   {
@@ -778,7 +777,7 @@ const data2 = [
     "personName": "Anushka Jain ",
     "personVertical": "Event Manager",
     "linkedin": "https://www.linkedin.com/in/anushka-jain-b47325350?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    "insta": "anushkajain7680",
+    "insta": "https://www.instagram.com/anushkajain7680",
     "mail": "mailto:2006anujain@gmail.com"
   },
   {
@@ -810,7 +809,7 @@ const data2 = [
     "personName": "Suhani Parikh ",
     "personVertical": "Event Manager",
     "linkedin": "https://www.linkedin.com/in/suhani-parikh-27sp06",
-    "insta": "parikh_suhani",
+    "insta": "https://www.instagram.com/parikh_suhani",
     "mail": "mailto:parikh27062005@gmail.com"
   },
   {
@@ -818,7 +817,7 @@ const data2 = [
     "personName": "Nikunj Mandhanya",
     "personVertical": "Event Manager",
     "linkedin": "https://www.linkedin.com/in/nikunj-mandhanya-564666326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "insta": "nikunj_mandhanya_05",
+    "insta": "https://www.instagram.com/nikunj_mandhanya_05",
     "mail": "mailto:nikunjmandhanya5@gmail.com"
   },
   {
@@ -850,7 +849,7 @@ const data2 = [
     "personName": "Shivam Ahirwar",
     "personVertical": "Sponsorship Executive",
     "linkedin": "https://www.linkedin.com/in/shivam-ahirwar-b4b59b30a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "insta": "Its_me_shiv.am",
+    "insta": "https://www.instagram.com/its_me_shiv.am",
     "mail": "mailto:shivam.shri.harivansh@gmail.com"
   },
   {
@@ -858,7 +857,7 @@ const data2 = [
     "personName": "Sahil Chouhan",
     "personVertical": "Sponsorship Executive",
     "linkedin": "https://www.linkedin.com/in/sahil-chouhan-7a7011324",
-    "insta": "sahil_chouhan_18",
+    "insta": "https://www.instagram.com/sahil_chouhan_18",
     "mail": "mailto:sahilchouhan528@gmail.com"
   },
   {
@@ -882,7 +881,7 @@ const data2 = [
     "personName": "Suyash Gupta ",
     "personVertical": "Sponsorship Executive",
     "linkedin": "www.linkedin.com/in/suyash-gupta-475b65313",
-    "insta": "Suyash.zz",
+    "insta": "https://www.instagram.com/suyash.zz",
     "mail": "mailto:spgd090@gmail.com"
   },
   {
@@ -890,7 +889,7 @@ const data2 = [
     "personName": "Manish Maurya ",
     "personVertical": "Video Editor",
     "linkedin": "https://www.linkedin.com/in/manish-maurya-b573a6323?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    "insta": "mani_maurya9670",
+    "insta": "https://www.instagram.com/mani_maurya9670",
     "mail": "mailto:Manish.m100.manish@gmail.com"
   },
   {
@@ -898,7 +897,7 @@ const data2 = [
     "personName": "Atul Tamrakar",
     "personVertical": "Video Editor",
     "linkedin": "http://linkedin.com/in/atul-tamrakar-81bb61282",
-    "insta": "atul_tamrakar._",
+    "insta": "https://www.instagram.com/atul_tamrakar._",
     "mail": "mailto:tamrakaratul57@gmail.com"
   },
   {
@@ -937,8 +936,8 @@ const data2 = [
     "imgLink": "./team_images/team_28/Varun Sharma.png",
     "personName": "Varun Sharma",
     "personVertical": "Web Developer",
-    "linkedin": "varun24-s",
-    "insta": "vxrun._s",
+    "linkedin": "https://www.linkedin.com/in/varun24-s",
+    "insta": "https://www.instagram.com/vxrun._s",
     "mail": "mailto:varunsharma2990@gmail.com"
   },
   {
