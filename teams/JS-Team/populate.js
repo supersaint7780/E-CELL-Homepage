@@ -366,7 +366,7 @@ const data1 = [
     "mail": "mailto:snehalterdalkar@gmail.com"
   },
   {
-    "imgLink": "./team_images/gaurvint.webp",
+    "imgLink": "./team_images/gaurvint.jpg",
     "personName": "Gaurvint Verma",
     "personVertical": "Events Secretary",
     "linkedin": "https://www.linkedin.com/in/gaurvint-verma-554329302/",
@@ -875,14 +875,6 @@ const data2 = [
     "linkedin": "https://www.linkedin.com/in/divyansh-kale-185725322",
     "insta": "https://www.instagram.com/divyansh.__45?igsh=MWZjOTJtbmhzc3RnNg%3D%3D&utm_source=qr",
     "mail": "mailto:divyanshkale26@gmail.com"
-  },
-  {
-    "imgLink": "./team_images/team_28/Suyash.png",
-    "personName": "Suyash Gupta ",
-    "personVertical": "Sponsorship Executive",
-    "linkedin": "www.linkedin.com/in/suyash-gupta-475b65313",
-    "insta": "https://www.instagram.com/suyash.zz",
-    "mail": "mailto:spgd090@gmail.com"
   },
   {
     "imgLink": "./team_images/team_28/manish maurya.jpg",
